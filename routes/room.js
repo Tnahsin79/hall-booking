@@ -16,7 +16,8 @@ router.post("/",function(req,res){
         room_name : req.body.name,
         num_of_seats : req.body.num_of_seats,
         amenities : req.body.amenities,
-        price : req.body.price
+        price : req.body.price,
+        status : false
     });
     res.status(200).json({
         message:"room created..."
